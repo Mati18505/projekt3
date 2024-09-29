@@ -2,6 +2,7 @@
     --c1: #4c4c4c;
     --bg1: rgb(87, 87, 87);
     --bg2: rgba(0, 0, 0, 0.5);
+    --bg3: rgba(45, 45, 60, 0.6);
     --container-width: 1050px; 
     --container-height: 500px;
     box-sizing: border-box;

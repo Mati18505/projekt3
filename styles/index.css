@@ -19,10 +19,6 @@
     backdrop-filter: blur(10px);
 }
 
-.header {
-    background-color: rgba(45, 45, 60, 0.6);
-}
-
 h1 {
     font-family: "Ribeye Marrow";
     color: white;
