@@ -97,16 +97,56 @@ h1 {
     width: 100%;
 }
 
-#product img {
+#product .img-container {
     grid-area: image;
     width: 480px;
     max-width: 100%;
-    aspect-ratio: 16/9;
-    object-fit: cover;
     border-radius: 10px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+#product img {
+    aspect-ratio: 16/9;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: .2s linear;
 }
 
 #product img:hover {
+    transform: scale(1.1);
+}
+
+.popup-img {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.9);
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    display: none;
+}
+
+.popup-img span {
+    position: absolute;
+    top: 0;
+    right: 10px;
+    font-size: 60px;
+    font-weight: bolder;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.popup-img img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 5px;
+    width: 750px;
+    object-fit: cover;
 }
 
 #product iframe {
