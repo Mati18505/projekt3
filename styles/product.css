@@ -56,6 +56,8 @@ h1 {
     background-color: rgba(163, 163, 163, 0.5);
     padding: 5px;
     text-transform: capitalize;
+
+    transition: .2s;
 }
 
 .navigation ul li a:hover {
@@ -159,6 +161,14 @@ h1 {
 
 .navigation a#return:hover {
     background-color: rgba(119, 119, 119, 0.5);
+}
+
+.navigation div.bottom {
+    width: 100%;
+}
+
+.navigation div.bottom hr {
+    margin-bottom: 1rem;
 }
 
 .flex-cont {
