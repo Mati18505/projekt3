@@ -89,6 +89,7 @@ h1 {
 
 #product h2 {
     grid-area: title;
+    font-family: Itim;
     text-align: center;
     font-size: 45px;
     margin: 0;
