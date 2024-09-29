@@ -35,7 +35,9 @@ h2 {
 }
 
 .buttons {
-    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
     overflow-y: scroll;
 
