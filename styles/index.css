@@ -1,9 +1,3 @@
-
-
-@import url('https://fonts.googleapis.com/css2?family=Ribeye+Marrow&family=Sankofa+Display&display=swap');
-
-@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
-
 .box {
     width: var(--container-width);
     height: var(--container-height);
@@ -17,23 +11,27 @@
 
     overflow: hidden;
     backdrop-filter: blur(10px);
+    border-radius: 10px;
+}
+
+.header {
+    text-align: center;
+    color: white;
 }
 
 h1 {
-    font-family: "Ribeye Marrow";
-    color: white;
-    text-align: center;
+    font-family: "Kaushan Script";
     font-size: 4.7rem;
     text-shadow: 4px 1px 7px rgb(0, 0, 0);
     margin: 0;
 }
 h2 {
-    font-family: "Lato";
-    color: #ddd;
+    font-family: "Itim";
     text-align: center;
-    font-size: 1.87rem;
-    padding: 20px 0;
+    font-size: 3rem;
+    padding: 0px 0;
     text-shadow: 3px 3px 10px black;
+    margin: 0;
 }
 
 .buttons {
