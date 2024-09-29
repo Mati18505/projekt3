@@ -136,3 +136,35 @@ h1 {
 #product table tr:hover {
     background-color: rgb(65, 65, 65);
 }
+
+.navigation a#return {
+    color: white;
+    background-color: rgba(83, 83, 83, 0.5);
+    text-decoration: none;
+
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin: 0;
+    padding: 5px;
+
+    font-family: "Calibri", sans-serif;
+    font-weight: bolder;
+    font-size: 2rem;
+
+    border-radius: 20px;
+
+    transition: .2s;
+}
+
+.navigation a#return:hover {
+    background-color: rgba(119, 119, 119, 0.5);
+}
+
+.flex-cont {
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+}
