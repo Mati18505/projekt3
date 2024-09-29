@@ -1,0 +1,84 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Ribeye+Marrow&family=Sankofa+Display&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+.box {
+    width: var(--container-width);
+    height: var(--container-height);
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    overflow: hidden;
+}
+
+.header {
+    background-color: rgba(45, 45, 60, 0.6);
+}
+
+h1 {
+    font-family: "Ribeye Marrow";
+    color: white;
+    text-align: center;
+    font-size: 4.7rem;
+    text-shadow: 4px 1px 7px rgb(0, 0, 0);
+    margin: 0;
+}
+h2 {
+    font-family: "Lato";
+    color: #ddd;
+    text-align: center;
+    font-size: 1.87rem;
+    padding: 20px 0;
+    text-shadow: 3px 3px 10px black;
+}
+
+.buttons {
+    display: block;
+
+    overflow-y: scroll;
+
+    /* hide scrollbar */
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
+/* hide scrollbar */
+.buttons:-webkit-scrollbar {
+    display: none;
+}
+
+.buttons a {
+    display: inline-block;
+    width: 30%;
+    height: 80px;
+
+    text-align: center;
+    line-height: 80px;
+
+    font-family: "Calibri", sans-serif;
+    font-weight: bolder;
+    font-size: 1.56rem;
+
+    margin: 30px 10px;
+
+    text-decoration: none;
+    color: white;
+    transition: .2s;
+
+    background-color:    #4c4c4c;
+    background-color:    linear-gradient(#4c4c4c, #323232);
+    border-radius: 20px;
+    box-shadow:    2px -2px #5e5e5e;
+
+}
+.buttons a:hover {
+    text-decoration: underline;
+    background-color: #323232;
+}

@@ -1,0 +1,138 @@
+
+
+body {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-template-rows: auto 1fr;
+    grid-template-areas:
+    "header header"
+    "nav product";
+    justify-items: center;
+    align-items: center;
+}
+
+h1 {
+    width: 100%;
+    margin: 0;
+    background-color: var(--bg2);
+    text-align: center;
+    font-size: 50px;
+    line-height: 100px;
+}
+
+#header {
+    grid-area: header;
+}
+
+.navigation {
+    grid-area: nav;
+    height: 100%;
+    background-color: var(--bg2);
+    padding: 16px;
+}
+
+.navigation h2 {
+    font-size: 2rem;
+}
+
+.navigation ul {
+    padding: 0;
+}
+
+.navigation ul li {
+    display: block;
+
+    list-style-type: none;
+    font-size: 25px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.navigation ul li a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    border-radius: 20px;
+    background-color: rgba(163, 163, 163, 0.5);
+    padding: 5px;
+    text-transform: capitalize;
+}
+
+.navigation ul li a:hover {
+    background-color: rgba(83, 83, 83, 0.5);
+}
+
+#product {
+    grid-area: product;
+    background-color: var(--bg2);
+    width: 80%;
+    height: 80%;
+    border-radius: 20px;
+    padding: 20px;
+
+    display: grid;
+    grid-template-rows: auto 1fr;
+    grid-template-columns: auto auto;
+    grid-template-areas: 
+    "title title"
+    "image video";
+    align-items: center;
+    justify-items: center;
+}
+
+#product h2 {
+    grid-area: title;
+    text-align: center;
+    font-size: 45px;
+    margin: 0;
+    margin-top: 10px;
+}
+
+#product img {
+    grid-area: image;
+    width: 480px;
+    max-width: 100%;
+    aspect-ratio: 16/9;
+    object-fit: cover;
+}
+
+#product iframe {
+    grid-area: video;
+    aspect-ratio: 16/9;
+    width: 720px!important;
+    height: auto;
+    max-width: 100%;
+}
+
+#product .container {
+    overflow-x: auto;
+    grid-area: 1 / 1 / span 2 / span 2;
+    max-width: 100%;
+    font-size: 5rem;
+}
+
+#product table {
+    background-color: var(--bg1);
+
+    width: 800px;
+    font-size: 1.5rem;
+}
+
+#product table, th, td {
+    border: 1px solid;
+    border-collapse: collapse;
+    text-align: center;
+    padding: 15px;
+}
+
+#product table tr {
+    transition: 0.1s ease-out;
+}
+
+#product table tr:nth-child(even) {
+    background-color: rgb(65, 65, 65);
+}
+
+#product table tr:hover {
+    background-color: rgb(65, 65, 65);
+}
