@@ -77,12 +77,13 @@ h1 {
 
     display: grid;
     grid-template-rows: auto 1fr;
-    grid-template-columns: auto auto;
+    grid-template-columns: 1fr 1.5fr;
     grid-template-areas: 
     "title title"
     "image video";
     align-items: center;
     justify-items: center;
+    gap: 1rem;
 
     backdrop-filter: blur(10px);
 }
@@ -100,8 +101,7 @@ h1 {
 #product .img-container {
     aspect-ratio: 16/9;
     grid-area: image;
-    width: 480px;
-    max-width: 100%;
+    max-width: 480px;
     border-radius: 10px;
     overflow: hidden;
     cursor: pointer;
@@ -153,7 +153,6 @@ h1 {
 #product iframe {
     grid-area: video;
     aspect-ratio: 16/9;
-    width: 720px!important;
     height: auto;
     max-width: 100%;
 }
