@@ -25,6 +25,14 @@ h1 {
     grid-area: header;
 }
 
+#header #menu-icon {
+    display: none;
+}
+
+#header #header-text {
+    text-wrap: nowrap;
+}
+
 .navigation {
     grid-area: nav;
     height: 100%;
@@ -87,6 +95,7 @@ h1 {
     gap: 1rem;
 }
 
+
 #product h2 {
     grid-area: title;
     font-family: Itim;
@@ -125,7 +134,7 @@ h1 {
     background-color: rgba(0,0,0,0.9);
     height: 100%;
     width: 100%;
-    z-index: 1;
+    z-index: 2;
     display: none;
 }
 
@@ -136,7 +145,7 @@ h1 {
     font-size: 60px;
     font-weight: bolder;
     cursor: pointer;
-    z-index: 1;
+    z-index: 2;
 }
 
 .popup-img img {
@@ -146,6 +155,7 @@ h1 {
     transform: translate(-50%, -50%);
     border-radius: 5px;
     width: 750px;
+    max-width: 100%;
     object-fit: cover;
 }
 
@@ -154,13 +164,14 @@ h1 {
     aspect-ratio: 16/9;
     height: auto;
     max-width: 100%;
+    border-radius: 10px;
 }
 
 #product .container {
     overflow-x: auto;
     grid-area: 1 / 1 / span 2 / span 2;
     max-width: 100%;
-    font-size: 5rem;
+    font-size: 3rem;
     padding: 2rem;
 }
 
@@ -224,4 +235,81 @@ h1 {
     justify-content: space-between;
     align-items: center;
     margin: 0;
+}
+
+@media only screen and (max-width: 1000px) {
+    body {
+        align-items: stretch;
+    }
+    #header {
+        font-size: 1.5rem;
+        display: grid;
+        grid-template-columns: auto 1fr;
+        align-content: center;
+    }
+
+    #header #menu-icon {
+        display: block;
+        padding: 0 2rem;
+    }
+
+    #header #header-text {
+        text-align: left;
+    }
+
+    #product {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto 1fr;
+        grid-template-areas:
+        "title"
+        "image"
+        "video";
+        max-width: 100%;
+        width: 100%;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        border-radius: 0 0 20px 20px;
+    }
+    
+    .navigation {
+        position: fixed;
+        left: -100%;
+        top: 0;
+        bottom: 0;
+        z-index: 1;
+        transition: 0.2s;
+    }
+
+    .navigation.active {
+        left: 0!important;
+    }
+
+    #product .container {
+        font-size: 1.5rem;
+        grid-area: 1 / 1 / span 3 / span 1;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    #product table {
+        width: 100%;
+        font-size: 1rem;
+    }
+
+    #product table, th, td {
+        border: 1px solid;
+        border-collapse: collapse;
+        text-align: center;
+        padding: 10px 15px;
+    }
+}
+
+@media only screen and (max-width: 370px) {
+    .navigation.active {
+        right: 3rem;
+    } 
+
+    #header #header-text {
+        font-size: 60%;
+    }
 }

@@ -46,6 +46,7 @@ h1 {
     max-width: 100%;
     aspect-ratio: 16/9;
     object-fit: cover;
+    border-radius: 5px;
 }
 
 .main iframe {
@@ -54,4 +55,22 @@ h1 {
     width: 720px!important;
     height: auto;
     max-width: 100%;
+    border-radius: 5px;
+}
+
+@media only screen and (max-width: 1000px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    .main {
+        height: 100%;
+        border-radius: 0;
+        align-content: flex-start;
+        padding: 25px 10px;
+    }
+
+    .footer {
+        font-size: 1rem;
+    }
 }
