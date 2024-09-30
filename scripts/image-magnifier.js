@@ -14,6 +14,10 @@ $(document).ready(() => {
     $(".popup-img").css({"display": "none"});
   });
 
+  $(".popup-img img").on("click", function(e) {
+    e.stopPropagation();
+  });
+
   $(window).on("click", function() { 
     if ($(".popup-img").css("display") != "none") {
       $(".popup-img").css({"display": "none"});
