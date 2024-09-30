@@ -98,6 +98,7 @@ h1 {
 }
 
 #product .img-container {
+    aspect-ratio: 16/9;
     grid-area: image;
     width: 480px;
     max-width: 100%;
